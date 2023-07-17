@@ -31,7 +31,13 @@
         </div>
         <div>
           <input type="text" placeholder="search" class="rounded-md px-3 py-2 text-gray-800 focus: outline-none focus: ring-blue-500">
-          <button class="bg-blue-500 hover:bg-blue-600 text-white rounded-md px-4 py-2 ml-2">Search</button>
+          <button type="button" id="submitBtn" class="relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+            <span id="btnText" class="mr-2">Submit</span>
+            <svg id="spinner" class="hidden animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042.388 5.999 1.09 8.765l2.303-1.29zm10.61-1.29L20 12a8 8 0 11-16 0h4a4 4 0 108 0h4a8.003 8.003 0 01-3.39 6.708z"></path>
+            </svg>
+          </button>
         </div>
       </div>
     </section>
@@ -55,6 +61,32 @@
     </section>
   </sidebar>
   <main>
+    <article class="float-right">
+      <div class="flex">
+        <div class="bg-gray-200 w-64">
+          <!-- TODO: Sidebar content -->
+        </div>
+        <div class="flex-grow ml-4">
+          <div class="container mx-auto py-8">
+            <h2 class="text-2xl font-semibold mb-4">Featured Restaurants</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              <!-- TODO: Card list content -->
+              <div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                  <img class="h-56 w-full object-cover object-center" src="asset/imgs/restaurant1.jpg" alt="avatar">
+                  <div class="p-4">
+                    <p class="uppercase tracking-wide text-sm font-bold text-gray-700">Restaurant Name</p>
+                    <p class="text-3xl text-gray-900">Restaurant Address</p>
+                    <p class="text-gray-700">Restaurant Description</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </article>
+  </main>
 </body>
 <script src="assets/js/script.js"></script>
 <footer> 

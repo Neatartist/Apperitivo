@@ -8,6 +8,8 @@ header {
     padding: 20px;
     text-align: center;
     postion: fixed;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS54rXDcDLdx3kzTpviRzRC8OZVbh72iZrp2Q&usqp=CAU")
+
 }
 header h1 {
     font-family: 'Lora', serif;
@@ -17,4 +19,9 @@ header h1 {
 #googlemap {
     height: 400px;
     width: 100%;
+}
+
+#Logo {
+    background-image: url("https://www.nicepng.com/png/detail/214-2148603_you-eat-ready-to-eat-food-icon.png");
+    
 }

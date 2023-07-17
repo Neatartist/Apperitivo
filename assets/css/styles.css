@@ -7,21 +7,30 @@
 header {
     padding: 20px;
     text-align: center;
-    postion: fixed;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS54rXDcDLdx3kzTpviRzRC8OZVbh72iZrp2Q&usqp=CAU")
+    background-image: url("../images/Banner03.jpg");  /* This is the line that was added. */
+    background-repeat: no-repeat;
+    background-size: cover; 
 
 }
 header h1 {
     font-family: 'Lora', serif;
-    font-size: 30px;
+    font-size: 60px;
+    padding-bottom: 10px;
 }
+
+
 
 #googlemap {
     height: 400px;
     width: 100%;
 }
 
-#Logo {
-    background-image: url("https://www.nicepng.com/png/detail/214-2148603_you-eat-ready-to-eat-food-icon.png");
-    
+.sidebar {
+    padding: 16px;
 }
+
+.main {
+    padding: 16px;
+}
+
+

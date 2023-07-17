@@ -11,10 +11,10 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<header class="	bg-orange-500 box-border font-semibold text-slate-50">
+<header class="	 box-border font-semibold text-slate-50">
   <h1 class="text-center text-xlg tracking-widest">Apperitivo</h1>
   <nav class="bg-orange-500">
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
           <div class="flex-shrink-0">
@@ -22,10 +22,10 @@
           </div>
           <div class="hidden md:block">
             <ul class="ml-10 flex items-baseline space-x-4">
-              <li href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</li>
-              <li href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</li>
-              <li href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</li>
-              <li href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</li>
+              <li href="#" class="text-gray-300 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium">Home</li>
+              <li href="#" class="text-gray-300 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium">About</li>
+              <li href="#" class="text-gray-300 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium">Services</li>
+              <li href="#" class="text-gray-300 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium">Contact</li>
             </ul>
           </div>
         </div>
@@ -48,12 +48,12 @@
   <sidebar>
     <section class="flex"> 
       <div class="bg-gray-200 w-64 rounded-md border-black border-2">
-        <h2 class="underline">look by topic</h2>
+        <h2 class="underline text-center">look by topic</h2>
         <ul class="py-4">
-          <li class="px-4 py-2"><a href="#" class="text-gray-800 font-medium hover:text-blue-700"> Breakfast</a></li>
-          <li class="px-4 py-2"><a href="#" class="text-gray-800 font-medium hover:text-blue-700"> lunch </a> </li>
-          <li class="px-4 py-2"><a href="#" class="text-gray-800 font-medium hover:text-blue-700"> Dinner</a> </li>
-          <li class="px-4 py-2"><a href="#" class="text-gray-800 font-medium hover:text-blue-700"> Dessert</a> </li>
+          <li class="px-4 py-2"><a href="#" class="text-gray-800 font-medium hover:text-blue-700 underline"> Breakfast</a></li>
+          <li class="px-4 py-2"><a href="#" class="text-gray-800 font-medium hover:text-blue-700 underline"> lunch </a> </li>
+          <li class="px-4 py-2"><a href="#" class="text-gray-800 font-medium hover:text-blue-700 underline"> Dinner</a> </li>
+          <li class="px-4 py-2"><a href="#" class="text-gray-800 font-medium hover:text-blue-700 underline"> Dessert</a> </li>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9renZ8ki4q7rSWPiEqFjv8sfVjIqEnm0"></script>
         <div id="googlemap" class="max-w-full max-h-80"></div>
         </ul>
@@ -61,14 +61,14 @@
     </section>
   </sidebar>
   <main>
-    <article class="float-right">
-      <div class="flex">
+    <article id = "popular" >
+      <div class="flex-row float-right ">
         <div class="bg-gray-200 w-64">
           <!-- TODO: Sidebar content -->
         </div>
         <div class="flex-grow ml-4">
           <div class="container mx-auto py-8">
-            <h2 class="text-2xl font-semibold mb-4">Featured Restaurants</h2>
+            <h2 class="text-2xl font-semibold mb-4">Popular</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               <!-- TODO: Card list content -->
               <div>

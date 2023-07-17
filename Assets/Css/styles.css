@@ -13,3 +13,8 @@ header h1 {
     font-family: 'Lora', serif;
     font-size: 30px;
 }
+
+#googlemap {
+    height: 400px;
+    width: 100%;
+}

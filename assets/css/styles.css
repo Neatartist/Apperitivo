@@ -33,4 +33,19 @@ header h1 {
     padding: 16px;
 }
 
+.article-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.article-container::-webkit-scrollbar {
+    display: none;
+}
+
+.article-card {
+    width: 320px;
+}
 

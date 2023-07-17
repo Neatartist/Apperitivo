@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-4 container">
-    <header class = " col-span-3 box-border font-semibold text-slate-50" >
+    <header class = " max-w-full col-span-3 box-border font-semibold text-slate-50" >
       <h1 class="text-center text-xlg tracking-widest">Apperitivo</h1>
       <nav class="bg-orange-500">
         <section class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,7 +47,7 @@
     </header>
     <aside class="md:col-span-1 flex flex-col">
       <section class=" p-0 m-0"> 
-        <div class="bg-gray-200 w-64 rounded-md border-black border-2">
+        <div class="bg-gray-200 w-64 rounded-md border-black border-2 ">
           <h2 class="underline text-center">look by topic</h2>
           <ul class="py-4">
             <li class="px-4 py-2"><a href="#" class="text-gray-800 font-medium hover:text-blue-700 underline"> Breakfast</a></li>
@@ -62,11 +62,12 @@
     </aside>
 
     <main class="main md:col-span-2 flex flex-col">
-      <article class=" " id = "popular" >
-          <div class="flex-grow ml-4 bg-gray-200 w-64">
+      <h2 class="text-2xl font-semibold mb-4 text-center hover:text-blue-700 underline">Popular</h2>
+      <div class="article-containter flex overflow-x-auto shadow-md flex-shrink-0 m-2">
+        <article class="article-card bg-white rounded-lg overflow-hidden hover:shadow-xl flex-shrink-0 m-2" id = "popular" >
+          <div class="flex-grow ml-4  max-w-full">
             <div class=" container mx-auto py-8">
-                <h2 class="text-2xl font-semibold mb-4 text-center">Popular</h2>
-              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              <div class="max-w-full max-h-80">
                 <div class="bg-white rounded-lg overflow-hidden shadow-md">
                   <img class="h-56 w-full object-cover object-center" src="asset/imgs/restaurant1.jpg" alt="avatar">
                   <div class="p-4">
@@ -78,7 +79,9 @@
               </div>
             </div>
           </div>
-      </article>
+        </article>
+      </div>  
+      <!-- TODO: create a second card. -->
     </main>
   </div>
 </body>
@@ -88,3 +91,4 @@
 <footer class="col-span-3"> 
 </footer>
 </html>
+

@@ -15,5 +15,7 @@ function initialize () {
   });
 }
 
+
 // DISPLAY THE MAP
 google.maps.event.addDomListener(window, "load", initialize);
+

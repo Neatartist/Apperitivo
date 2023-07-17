@@ -1,5 +1,13 @@
 const APIkey = "AIzaSyA9renZ8ki4q7rSWPiEqFjv8sfVjIqEnm0";
 const url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=";
+var searchBtn = document.getElementById("submitBtn")
+var searchRest = document.getElementById("search-rest")
+
+$(searchBtn).on("click", function(event) {
+  event.preventDefault();
+  var content = searchRest
+  search(content)
+})
 
 function initialize () {
   let mapOptions = {

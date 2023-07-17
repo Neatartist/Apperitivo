@@ -11,14 +11,33 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="Assets/Css/styles.css">
 </head>
-<header class="	bg-sky-600 box-border">
-  <h1 class="text-center text-lg">Apperitivo</h1>
+<header class="	bg-orange-500 box-border font-semibold text-slate-50">
+  <h1 class="text-center text-xlg tracking-widest">Apperitivo</h1>
 </header>
 <body>
-  <main>
-    <div>
-
+  <sidebar class="sidebar">
+    <div class="">
+      <h2>Search by type</h2>
+      <div class="">
+        <input type="text" id="search" name="search" placeholder="Search" class=" w-[120px] px-2 flex flex-row">
+        <button id="Search-button" class=" w-26 bg-orange-500 m-0 rounded-md ">Search</button> 
+      </div>
     </div>
-  </main>
+      
+      <!-- favorites dropdown menu -->
+      
+      <!-- topics listed under the search bar-->
+      <ul>
+        <li>Seafood</li>
+        <li>Sanwhiches</li>
+        <li>Vegetarian</li>
+        <li>Gluten Free</li>
+      </ul>
+      </div>
+      <!-- TODO: google maps api -->
+      <div id="google-maps"></div>
+    </div>
+  </sidebar>
+  <main>
 </body>
 </html>

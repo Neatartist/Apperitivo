@@ -6,20 +6,10 @@
 }
 header {
     padding: 20px;
-    text-align: center
+    text-align: center;
     postion: fixed;
 }
 header h1 {
     font-family: 'Lora', serif;
     font-size: 30px;
-}
-
-.sidebar {
-    position: 
-    top: 0;
-    left: 0;
-    height:  vh;
-    width: 250px;
-    background-color: darkgray;
-    padding: 20px;
 }

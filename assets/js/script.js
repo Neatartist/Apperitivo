@@ -92,7 +92,7 @@ function displayRestaurant(data) {
     icon: "https://example.com/mcdonalds_icon.png", // Replace this URL with the actual McDonald's icon URL.
     rating: 4.2,
     opening_hours: "10:00 AM - 11:00 PM",
-    description: "A popular fast-food chain known for burgers and fries.",
+    description: "A popular fast-food chain known for burgers, fries and the grimace shake.",
   };
   
   displayRestaurant(mcdonaldsData);

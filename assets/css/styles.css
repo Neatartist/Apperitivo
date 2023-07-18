@@ -7,14 +7,44 @@
 header {
     padding: 20px;
     text-align: center;
-    postion: fixed;
+    background-image: url("../images/Banner03.jpg");  /* This is the line that was added. */
+    background-repeat: no-repeat;
+    background-size: cover; 
+
 }
 header h1 {
     font-family: 'Lora', serif;
-    font-size: 30px;
+    font-size: 60px;
+    padding-bottom: 10px;
 }
+
+
 
 #googlemap {
     height: 400px;
     width: 100%;
+}
+
+.sidebar {
+    padding: 16px;
+}
+
+.main {
+    padding: 16px;
+}
+
+.article-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.article-container::-webkit-scrollbar {
+    display: none;
+}
+
+.article-card {
+    width: 320px;
 }

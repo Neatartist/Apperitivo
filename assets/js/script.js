@@ -21,8 +21,8 @@ function getLocation() {
 function showPosition(position) {
 
   // pull of the lat and long -- from the browser
-   lat = position.coords.latitude
-   long = position.coords.longitude
+  lat = position.coords.latitude
+  long = position.coords.longitude
   console.log(lat, long);
   // pass to init map
   initMap(lat, long)
@@ -62,27 +62,43 @@ function search() {
 }
 
 function displayRestaurant(data) {
-  console.log(data);
-  const {name} = data.resName;
-  const {icon, rating} = data.resAdd;
-  const {opening_hours, description} = data.resDesc;
+  const { name, icon, rating, opening_hours, description } = data;
 
-  rest.innerText = name;
-  var res1 = document.createElement("h2")
-  var res2 = document.createElement("img")
-  var res3 = document.createElement("h2")
-  var res4 = document.createElement("h2")
-  var res5 = document.createElement("h2")
+  const restaurantDiv = document.createElement("div");
+  restaurantDiv.classList.add("restaurant-info");
 
- // res1.innerText = name
-  res2.innerText = icon
-  res3.innerText = rating
-  res4.innerText = opening_hours
-  res5.innerText = description
+  const nameHeading = document.createElement("h2");
+  const iconImage = document.createElement("img");
+  const ratingHeading = document.createElement("h2");
+  const openingHoursHeading = document.createElement("h2");
+  const descriptionHeading = document.createElement("h2");
 
-  rest.append(res1, res2, res3, res4, res5)
-  savedRest(name)
+  nameHeading.innerText = name;
+  iconImage.src = icon;
+  ratingHeading.innerText = `Rating: ${rating}`;
+  openingHoursHeading.innerText = `Opening Hours: ${opening_hours}`;
+  descriptionHeading.innerText = `Description: ${description}`;
+
+  restaurantDiv.append(nameHeading, iconImage, ratingHeading, openingHoursHeading, descriptionHeading);
+
+  const rest = document.getElementById("popular");
+  rest.innerHTML = ""; // Clear any existing content
+  rest.appendChild(restaurantDiv);
+
+  // Log the value of the 'icon' variable to the console
+  console.log(icon);
+  const mcdonaldsData = {
+    name: "McDonald's",
+    icon: "https://example.com/mcdonalds_icon.png", // Replace this URL with the actual McDonald's icon URL.
+    rating: 4.2,
+    opening_hours: "10:00 AM - 11:00 PM",
+    description: "A popular fast-food chain known for burgers, fries and the grimace shake.",
+  };
+  
+  displayRestaurant(mcdonaldsData);
+  
 }
+
 
 function initMap (latitude,longitude) {
   let mapOptions = {
@@ -102,4 +118,3 @@ getLocation();
 
 // DISPLAY THE MAP
 //google.maps.event.addDomListener(window, "load", initMap);
-

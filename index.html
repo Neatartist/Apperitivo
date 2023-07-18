@@ -54,7 +54,7 @@
             <li class="px-4 py-2"><a href="#" class="text-gray-800 font-medium hover:text-blue-700 underline"> lunch </a> </li>
             <li class="px-4 py-2"><a href="#" class="text-gray-800 font-medium hover:text-blue-700 underline"> Dinner</a> </li>
             <li class="px-4 py-2"><a href="#" class="text-gray-800 font-medium hover:text-blue-700 underline"> Dessert</a> </li>
-          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9renZ8ki4q7rSWPiEqFjv8sfVjIqEnm0"></script>
+          <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9renZ8ki4q7rSWPiEqFjv8sfVjIqEnm0"async defer></script>
           <div id="googlemap" class="max-w-full max-h-80"></div>
           </ul>
         </div>
@@ -64,21 +64,8 @@
     <main class="main md:col-span-2 flex flex-col">
       <h2 class="text-2xl font-semibold mb-4 text-center hover:text-blue-700 underline">Popular</h2>
       <div class="article-containter flex overflow-x-auto shadow-md flex-shrink-0 m-2">
-        <article class="article-card bg-white rounded-lg overflow-hidden hover:shadow-xl flex-shrink-0 m-2" id = "popular" >
-          <div class="flex-grow ml-4  max-w-full">
-            <div class=" container mx-auto py-8">
-              <div class="max-w-full max-h-80">
-                <div class="bg-white rounded-lg overflow-hidden shadow-md">
-                  <img class="h-56 w-full object-cover object-center" src="asset/imgs/restaurant1.jpg" alt="avatar">
-                  <div class="p-4">
-                    <p  class="uppercase tracking-wide text-sm font-bold text-gray-700"></p>
-                    <p id="res-add" class="text-3xl text-gray-900">Restaurant Address</p>
-                    <p id="res-desc" class="text-gray-700">Restaurant Description</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <article class="article-card bg-white rounded-lg overflow-hidden hover:shadow-xl flex-shrink-0 m-2">
+          <div id = "popular"></div>
         </article>
       </div>  
       <!-- TODO: create a second card. -->

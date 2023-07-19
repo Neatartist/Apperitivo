@@ -39,7 +39,7 @@ function search() {
   console.log(inputText)
   var content = encodeURIComponent(inputText)
   console.log(lat,long)
-  let url = 'https://floating-headland-95050.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + lat + ',' + long + '&radius=50000&type=restaurant&keyword=' + content + '&key=' + APIkey2;
+  let url = 'https://floating-headland-95050.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + lat + ',' + long + '&radius=50000&type=restaurant&keyword=' + content + '&key=' + APIkey;
   // console.log(url)
   fetch(url)
   .then((response) => {
@@ -62,6 +62,7 @@ function search() {
 }
 
 function displayRestaurant(data) {
+  console.log(data)
   const { name, icon, rating, opening_hours, description } = data;
 
   const restaurantDiv = document.createElement("div");
@@ -74,7 +75,7 @@ function displayRestaurant(data) {
   const descriptionHeading = document.createElement("h2");
 
   nameHeading.innerText = name;
-  iconImage.src = icon;
+  iconImage.src = "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/" + icon + ".png";
   ratingHeading.innerText = `Rating: ${rating}`;
   openingHoursHeading.innerText = `Opening Hours: ${opening_hours}`;
   descriptionHeading.innerText = `Description: ${description}`;
@@ -86,16 +87,16 @@ function displayRestaurant(data) {
   rest.appendChild(restaurantDiv);
 
   // Log the value of the 'icon' variable to the console
-  console.log(icon);
-  const mcdonaldsData = {
-    name: "McDonald's",
-    icon: "https://example.com/mcdonalds_icon.png", // Replace this URL with the actual McDonald's icon URL.
-    rating: 4.2,
-    opening_hours: "10:00 AM - 11:00 PM",
-    description: "A popular fast-food chain known for burgers, fries and the grimace shake.",
-  };
+  // console.log(icon);
+  // const mcdonaldsData = {
+  //   name: "McDonald's",
+  //   icon: "https://example.com/mcdonalds_icon.png", // Replace this URL with the actual McDonald's icon URL.
+  //   rating: 4.2,
+  //   opening_hours: "10:00 AM - 11:00 PM",
+  //   description: "A popular fast-food chain known for burgers, fries and the grimace shake.",
+  // };
   
-  displayRestaurant(mcdonaldsData);
+  displayRestaurant();
   
 }
 

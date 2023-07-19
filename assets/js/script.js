@@ -58,8 +58,10 @@ function search() {
 
 function displayRestaurant(data) {
   console.log(data);
-  const { name, icon, rating, opening_hours, vicinity} = data;
+  const { name, icon, rating, opening_hours, vicinity, photos} = data;
   const { open_now } = opening_hours;
+//  const {photo_reference} = photos[2];
+  const photo = photos[2]
   const restaurantDiv = document.createElement("div");
   restaurantDiv.classList.add("restaurant-info");
 
@@ -80,6 +82,7 @@ function displayRestaurant(data) {
   restaurantDiv.appendChild(ratingHeading);
   restaurantDiv.appendChild(openingHoursHeading);
   restaurantDiv.appendChild(vicinityHeading);
+  restaurantDiv.style.backgroundImage = `url(${photo})`
 
   const rest = document.getElementById("popular");
   rest.innerHTML = ""; // Clear any existing content

@@ -9,7 +9,6 @@ var lat = 0;
 var long = 0;
 let savedRest = [];
 
-// get current device location
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
@@ -56,6 +55,10 @@ function search() {
     });
 }
 
+
+
+
+
 function displayRestaurant(data) {
   console.log(data);
   const { name, icon, rating, opening_hours, vicinity, photos} = data;
@@ -70,13 +73,13 @@ function displayRestaurant(data) {
   const ratingHeading = document.createElement("h2");
   const openingHoursHeading = document.createElement("h2");
   const vicinityHeading = document.createElement("h2");
-
+  
   nameHeading.innerText = name;
   iconImage.src = icon;
   ratingHeading.innerText = ("Rating: "+ rating);
   openingHoursHeading.innerText = ("Open Now: " + open_now);
   vicinityHeading.innerText = ("Adress: " + vicinity);
-
+  console.log(photo);
   restaurantDiv.appendChild(nameHeading);
   restaurantDiv.appendChild(iconImage);
   restaurantDiv.appendChild(ratingHeading);

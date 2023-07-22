@@ -9,14 +9,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Tinos&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9renZ8ki4q7rSWPiEqFjv8sfVjIqEnm0&v=beta&libraries=places" async defer></script>
 </head>
 <body>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-4 container max-w-full">
     <header class = " max-w-full col-span-3 box-border font-semibold text-slate-50" >
       <h1 class="text-center text-xlg tracking-widest">Apperitivo</h1>
-      <nav class="bg-orange-500">
+      <div class="bg-orange-500">
         <section class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center justify-between h-16">
             <div class="flex items-center">
@@ -25,19 +25,17 @@
               </div>
               <div class="hidden md:block">
                 <ul class="ml-10 flex items-baseline space-x-4">
-                  <li href="#" class="text-gray-300 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium">
-                    <a href="index.html">Home</a>
+                  <li href="index.html" class="text-gray-300 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium">
+                    <a href="index.html"> Home</a>
                   </li>
                   <li href="#" class="text-gray-300 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium">About</li>
-                  <li href="#" class="text-gray-300 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium">
-                    <a href="maps.html">Nearby</a>
-                  </li>
+                  <li href="maps.html" class="text-gray-300 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium"></li>
+                    <a href="maps.html"> Nearby</a>
                   <li href="#" class="text-gray-300 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium">Contact</li>
                 </ul>
               </div>
             </div>
-            <div>
-              <input type="text" id="surf" placeholder="search" class="rounded-md px-3 py-2 text-gray-800 focus: outline-none focus: ring-blue-500">
+              <input type="text" id="surf" placeholder="search" class="rounded-md px-3 py-2 text-gray-800 focus: outline-none focus: ring-blue-500"></input>
               <button type="button" id="submitBtn" class="relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                 <span id="btnText" class="mr-2">Submit</span>
                 <svg id="spinner" class="hidden animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -48,37 +46,13 @@
             </div>
           </div>
         </section>
-      </nav>
-    </header>
-    <aside class="md:col-span-1 flex flex-col">
-      <section class=" p-0 m-0"> 
-        <div class="bg-gray-200 w-64 rounded-md border-black border-2 ">
-          <h2 class="underline text-center">look by topic</h2>
-          <ul class="py-4">
-            <li class="px-4 py-2"><a href="#" class="text-gray-800 font-medium hover:text-blue-700 underline"> Breakfast</a></li>
-            <li class="px-4 py-2"><a href="#" class="text-gray-800 font-medium hover:text-blue-700 underline"> lunch </a> </li>
-            <li class="px-4 py-2"><a href="#" class="text-gray-800 font-medium hover:text-blue-700 underline"> Dinner</a> </li>
-            <li class="px-4 py-2"><a href="#" class="text-gray-800 font-medium hover:text-blue-700 underline"> Dessert</a> </li>
-          <div id="googlemap" class="max-w-full max-h-80"></div>
-          </ul>
-        </div>
-      </section>
-    </aside>
+      </div>
+  <main>
+    <section>
+      <h1> Find a place Nearby </h1>
+      <div id="googlemap" class="max-h-full max-w-full"></div>
 
-    <main class="main md:col-span-2 flex flex-col">
-      <h2 class="text-2xl font-semibold mb-4 text-center hover:text-blue-700 underline">Popular</h2>
-      <div class="article-containter flex overflow-x-auto shadow-md flex-shrink-0 m-2">
-        <article class="article-card bg-white rounded-lg overflow-hidden hover:shadow-xl flex-shrink-0 m-2">
-          <div id = "popular"></div>
-        </article>
-      </div>  
-      <!-- TODO: create a second card. -->
-    </main>
-  </div>
-</body>
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="assets/js/script.js"></script>
-<footer class="col-span-3"> 
-</footer>
-</html>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="./assets/js/script.js"></script>

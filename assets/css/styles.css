@@ -48,3 +48,17 @@ header h1 {
 .article-card {
     width: 320px;
 }
+
+.restaraunt-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.logo {
+    background-image: url(/assets/images/Apperitivo\ logo.png);
+    background-size: cover;
+    background-size: auto;
+}

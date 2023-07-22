@@ -9,7 +9,6 @@ var lat = 0;
 var long = 0;
 let savedRest = [];
 
-
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
